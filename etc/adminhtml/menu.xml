@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+            id="AHT_Listing::listing" 
+            title="Listing" 
+            module="AHT_Listing" 
+            sortOrder="10" 
+            resource="AHT_Listing::helloworld"
+        />
+
+        <add 
+            id="AHT_Listing::post" 
+            title="Listing listing" 
+            module="AHT_Listing" 
+            sortOrder="10" 
+            action="listing/post" 
+            resource="AHT_Listing::post" 
+            parent="AHT_Listing::listing"
+        />
+    </menu>
+</config>
